@@ -1,19 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navigation.css';
+import { AppRoutes } from '../../routing/routing';
 
 export const Navigation = () => {
   return (
     <nav>
       <ul>
         <li>
-          <NavLink to={'/'}>Posts</NavLink>
+          <NavLink to={AppRoutes.PostList}>Posts</NavLink>
         </li>
         <li>
-          <NavLink to={'/todoList'}>Todos</NavLink>
+          <NavLink to={AppRoutes.TodoList}>Todos</NavLink>
         </li>
         <li>
-          <NavLink to={'/userList'}>Users</NavLink>
+          <NavLink to={AppRoutes.UserList}>Users</NavLink>
         </li>
       </ul>
     </nav>
