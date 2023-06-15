@@ -1,11 +1,9 @@
-/** @format */
-
 import React from 'react';
 import './TodoList.css';
-import { useSelector} from 'react-redux';
+import { useSelector } from 'react-redux';
 
 export const TodoList = () => {
-  const todoList = useSelector((state) => state.todoList);  
+  const todoList = useSelector((state) => state.todoList.todoList);
 
   return (
     <div className="todo_list">
@@ -18,5 +16,4 @@ export const TodoList = () => {
       ))}
     </div>
   );
-  
 };

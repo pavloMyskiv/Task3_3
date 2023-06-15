@@ -3,7 +3,8 @@ import './PostList.css';
 import { useSelector } from 'react-redux';
 
 export const PostList = () => {
-  const postList = useSelector((state) => state.postList);
+  const postList = useSelector((state) => state.postList.postList);
+
   return (
     <div className="post_list">
       <h1>Posts</h1>
