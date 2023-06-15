@@ -1,6 +1,6 @@
 import './App.css';
 import { RouterProvider } from 'react-router-dom';
-import { routing } from './routing/router';
+import { routing } from './routing/routing';
 
 const App = () => <RouterProvider router={routing} />;
 
