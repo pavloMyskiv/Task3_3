@@ -1,3 +1,5 @@
+/** @format */
+
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
@@ -10,9 +12,15 @@ const initialState = {
 
 const postListSlice = createSlice({
   name: 'postList',
-  initialState,
-  reducers: {
-    emptyReducer: (state) => state,
+  postList: [
+    { id: 1, title: 'Post 1', body: 'This is the body of post 1.' },
+    { id: 2, title: 'Post 2', body: 'This is the body of post 2.' },
+    { id: 3, title: 'Post 3', body: 'This is the body of post 3.' },
+  ],
+  reducer: {
+    emptyReducer: (state, action) => {
+      return state;
+    },
   },
 });
-export default postListSlice.reducer;
+export const postListReducer  =  postListSlice.reducer;

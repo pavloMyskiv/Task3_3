@@ -5,7 +5,12 @@ import './TodoList.css';
 import { useSelector} from 'react-redux';
 
 export const TodoList = () => {
-  const todoList = useSelector((state) => state.todoList);  
+  //const todoList = useSelector((state) => state.todoList);
+  const todoList =[
+    { id: 1, title: 'Todo 1', completed: false },
+    { id: 2, title: 'Todo 2', completed: true },
+    { id: 3, title: 'Todo 3', completed: false },
+  ]  
 
   return (
     <div className="todo_list">
