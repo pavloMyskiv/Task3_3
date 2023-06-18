@@ -8,16 +8,15 @@ export const Navigation = () => {
     <nav>
       <ul>
         <li>
+          <NavLink to={AppRoutes.UserList}>Users</NavLink>
+        </li>
+        <li>
           <NavLink to={AppRoutes.PostList}>Posts</NavLink>
         </li>
         <li>
           <NavLink to={AppRoutes.TodoList}>Todos</NavLink>
         </li>
-        <li>
-          <NavLink to={AppRoutes.UserList}>Users</NavLink>
-        </li>
       </ul>
     </nav>
   );
 };
-

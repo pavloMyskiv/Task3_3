@@ -13,10 +13,22 @@
 }
 .user {
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
-.user h2 {
+.user button {
+  padding: 5px;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: rgb(61, 164, 112);
+  cursor: pointer;
+}
+.user_info h2 {
   font-size: 24px;
 }
-.user span {
+.user_info span {
   color: #000;
 }
+.selected_user{background-color: rgb(6,153,195);}

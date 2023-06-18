@@ -5,20 +5,19 @@ import TodoList from '../components/TodoList';
 import UserList from '../components/UserList';
 
 export const AppRoutes = {
-  PostList:'/',
-  TodoList:'/todoList',
-  UserList:'/userList',
-}
+  PostList: '/postList',
+  TodoList: '/todoList',
+  UserList: '/',
+};
 
 export const routing = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
     children: [
-      { element: <PostList />, index: true },
+      { element: <UserList />, index: true },
+      { path: AppRoutes.PostList, element: <PostList /> },
       { path: AppRoutes.TodoList, element: <TodoList /> },
-      { path: AppRoutes.UserList, element: <UserList /> },
     ],
   },
 ]);
-
